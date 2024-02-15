@@ -1,1 +1,127 @@
 // Your styles go here
+
+html{
+    height: 100%;
+    box-sizing: border-box;
+}
+
+body{
+    width: 85%;
+    margin: 0 auto 1rem;
+    text-align: center;
+    background-color: lightgrey;
+}
+
+.container{
+    display: grid;
+    gap: 10px;
+    grid-template-areas: "row1" "row2" "row3" "row4";
+    grid-template-rows: repeat(4, auto);
+
+    
+}
+
+.row1{
+    display: grid;
+    grid-area: row1;
+}
+
+.row1 > .box{
+    background-color: aqua;
+    padding: 1.5em;
+    
+    
+}
+
+.row2{
+    display: grid;
+    gap: 10px;
+    grid-area: row2;
+}
+
+.row2 > .class{
+    grid-auto-rows: 1fr;
+    background-color: black;
+    margin-bottom: .3rem;
+   padding: .5rem;
+}
+
+.row3 {
+    display: grid;
+    gap: 10px;
+    grid-area: row3;
+                        
+}
+
+.row3 > .col1{
+    display: grid; 
+    gap: 10px;
+
+}
+
+.col1 > .class{
+    background-color: aqua;
+    margin-bottom: .5rem;
+    padding: 4rem;
+   
+    
+}
+
+.col2col3
+{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.col2left, .col2right
+{
+    display: grid;
+    grid-column: 1/2;
+    gap: 10px;
+    
+}
+
+.col2left > .box,  .col2right > .box
+{
+    
+    background-color: black;
+    margin-bottom: 2em;
+    
+}
+
+.col3{
+    grid-column: 2/2;
+    margin-left: 15px;
+}
+
+.col2col3 > .col3 > .box{
+    background-color: aqua;
+    padding: 5rem;
+    
+}
+
+.row4
+{
+    display: grid;
+    background-color: aqua;
+    padding: 2rem;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
